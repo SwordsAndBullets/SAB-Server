@@ -17,10 +17,7 @@ div{
 }
 div.top-banner{
     position: absolute;
-    top: 0; left: 0;
     background-color: #303030;
-    width: 100%;
-    margin: 0 auto;
     text-align: left;
 }
 div.content{
@@ -28,7 +25,11 @@ div.content{
     border-color: #00000000;
     background-color: #00000000;
     width: 90%;
-    padding-top:70px;
-    overflow: scroll;
-    height: 90vh;
+
+}
+
+/*links*/
+a.top-banner-link{
+    color:#87cefa;
+    padding: 0px 5px;
 }
