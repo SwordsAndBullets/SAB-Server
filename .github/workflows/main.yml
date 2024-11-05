@@ -19,4 +19,3 @@ jobs:
         username: if0_37363127
         password: ${{ secrets.ftp_password }}
         server-dir: /three.tripnia.net/htdocs/
-        dry-run: true
