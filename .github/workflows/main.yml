@@ -18,5 +18,5 @@ jobs:
         server: ftpupload.net
         username: if0_37363127
         password: ${{ secrets.ftp_password }}
-        local-dir: /three.tripnia.net/htdocs/
+        server-dir: /three.tripnia.net/htdocs/
         dry-run: true
