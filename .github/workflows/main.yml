@@ -3,7 +3,7 @@ on:
     branches:
     - main
   workflow_dispatch:
-name: 🚀 Deploy website on push
+name: 🚀 Deploy website on pull to main
 jobs:
   web-deploy:
     name: 🎉 Deploy
