@@ -10,7 +10,13 @@
 </head>
 <div id="title"><h1>Create Account</h1></div>
 <div>
-    <p>username:</p><!--username input box-->
-    <p>password:</p><!--password input box-->
-    <p>repeat password:</p><!--password input box-->
+    <form id="createUserForm" method="POST" action="">
+        <p>Username: <input type="text" name="createUsername"></p>
+        <p>Password: <input type="password" name="createPassword"></p>
+        <p>Repeat Password: <input type="password" name="repeatPassword"></p>
+        <input type="submit" value="Create Account">
+    </form>
+    <script>
+        document.getElementById("createUserForm").action = url + "/sab/CreateAccount.php";
+    </script>
 </div>
