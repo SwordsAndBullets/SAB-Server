@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <head>
     <title>Swords And Bullets</title>
-    <link rel="stylesheet" href="http://localhost/global.css">
+    <link id="stylesheetLink" rel="stylesheet" href="">
+    <script>
+        let domainUrl = window.location.href;
+        let url = domainUrl.substring(0, domainUrl.indexOf("/", domainUrl.indexOf("//") + 2));
+        document.getElementById("stylesheetLink").href = url + "/global.css";
+    </script>
 </head>
 <body>
     <div class="top-banner">
-        <p>Sample Banner Content</p>
+        <a id="loginButton" class="top-banner-link" href="">Login</a>
+        <a id="createAccountButton" class="top-banner-link" href="">Create Account</a>
     </div>
     <div class="content">
         <div id="title"><h1>Swords And Bullets</h1></div>
         <div id="template-text"><p>and with the other, he was slapping me!<br>(Slaps Adam with his hand to represent his scenario)<br>GIRL BEE #2:<br>- Oh, my!<br>BARRY:<br>- I never thought I'd knock him out.<br>GIRL BEE #1:<br>(Looking at Adam)<br>What were you doing during this?<br>ADAM:<br>Obviously I was trying to alert the authorities.<br>BARRY:<br>I can autograph that.<br><br>(The pollen jocks walk up to Barry and Adam, they pretend that Barry and<br>Adam really are pollen jocks.)<br>POLLEN JOCK #1:<br>A little gusty out there today,<br>wasn't it, comrades?<br>BARRY:<br>Yeah. Gusty.<br>POLLEN JOCK #1:<br>We're hitting a sunflower patch<br>six miles from here tomorrow.<br>BARRY:<br>- Six miles, huh?<br>ADAM:<br>- Barry!<br>POLLEN JOCK #2:<br>A puddle jump for us,<br>but maybe you're not up for it.<br>BARRY:<br>- Maybe I am.<br>ADAM:<br>- You are not!<br>POLLEN JOCK #1:<br>We're going 0900 at J-Gate.<br>:<br>What do you think, buzzy-boy?<br>Are you bee enough?<br>BARRY:<br>I might be. It all depends<br>on what 0900 means.<br>(The scene cuts to Barry looking out on the hive-city from his balcony at night)<br>MARTIN:<br><br>Hey, Honex!<br>BARRY:<br>Dad, you surprised me.<br>MARTIN:<br>You decide what you're interested in?<br>BARRY:<br>- Well, there's a lot of choices.<br>- But you only get one.<br>:<br>Do you ever get bored<br>doing the same job every day?<br></p></div>
     </div>
+    <script>
+        document.getElementById("loginButton").href = url + "/sab/login";
+        document.getElementById("createAccountButton").href = url + "/sab/createaccount";
+    </script>
 </body>
