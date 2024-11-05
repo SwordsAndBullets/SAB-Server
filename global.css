@@ -1,6 +1,6 @@
 /*global*/
 body{
-    background-image: url("http://localhost/resources/images/pinkwavepattern.jpg");
+    background-image: url("/resources/images/pinkwavepattern.jpg");
     background-color: #262626;
     background-size: cover;
     background-repeat: no-repeat;

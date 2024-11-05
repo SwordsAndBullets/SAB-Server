@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>Tripnia</title>
+    <link id="stylesheetLink" rel="stylesheet" href="">
+    <script>
+        let domainUrl = window.location.href;
+        let url = domainUrl.substring(0, domainUrl.indexOf("/", domainUrl.indexOf("//") + 2));
+        document.getElementById("stylesheetLink").href = url + "/global.css";
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>Tripnia</h1>
+    </div>
+    <div>
+        <p><a id="sabButton" href="">Swords And Bullets</a></p>
+        <p><a id="minecraftButton" href="">Minecraft</a></p>
+    </div>
+    <script>
+        document.getElementById("sabButton").href = url + "/sab";
+        document.getElementById("minecraftButton").href = url + "/mc";
+    </script>
+</body>

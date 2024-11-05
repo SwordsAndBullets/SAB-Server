@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <head>
     <title>Create Account</title>
-    <link rel="stylesheet" href="http://localhost/global.css">
+    <link id="stylesheetLink" rel="stylesheet" href="">
+    <script>
+        let domainUrl = window.location.href;
+        let url = domainUrl.substring(0, domainUrl.indexOf("/", domainUrl.indexOf("//") + 2));
+        document.getElementById("stylesheetLink").href = url + "/global.css";
+    </script>
 </head>
 <div id="title"><h1>Create Account</h1></div>
 <div>
