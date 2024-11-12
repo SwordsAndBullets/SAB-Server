@@ -18,7 +18,7 @@ $playerInventory = $conn->query($sqlGetInventory);
 $inventoryString = "";
 if($result->num_rows > 0){
     while($item = $playerInventory->fetch_assoc()){
-        $inventoryString = $inventoryString . $item["id"] . "," . $item["name"] . "/";
+        $inventoryString = $inventoryString . $item["id"] . "," . $item["level"] . "/";
     }
     die($inventoryString);
 }else{
