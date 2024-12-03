@@ -20,7 +20,8 @@ $item = $conn->query($sqlGetItem);
 $itemData = "";
 if($item->num_rows > 0){
     $item = $item->fetch_assoc();
-    $itemData = $itemData . $item["name"] . "," . $item["type"]; //Add more fields here: $item["{database column}"];
+    $itemData = $itemData . $item["name"] . "," . $item["type"] . "," . $item["speed"] . "," . $item["strength"] . "," . $item["range"] . "," . $item["rarity"]; //Add more fields here: $item["{database column}"];
+    die($itemData);
 }else{
     die("Item not found.")//Item with that ID doesn't exist.
 }
