@@ -44,5 +44,4 @@ if($result->num_rows > 0){
         echo(implode("/", $row));
     }
 }
-
 ?>
