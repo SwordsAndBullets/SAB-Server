@@ -5,9 +5,12 @@ on:
   workflow_dispatch:
 name: 🚀 Deploy website on pull to main
 jobs:
-  web-deploy:
+  deployment:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
+    environment:
+      name: Main Site
+      url: http://three.tripnia.net/sab
     steps:
     - name: Get latest code
       uses: actions/checkout@v4
